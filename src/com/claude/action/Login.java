@@ -3,22 +3,26 @@ import com.claude.bean.Person;
 import com.claude.dao.Dao;
 import com.opensymphony.xwork2.ActionSupport;
 
-
 public class Login extends ActionSupport{
     /**
      * 
      */
     private static final long serialVersionUID = -1339567642215112514L;
     private Person person;
-    public String login(){
+    public String login() {
         Dao dao=new Dao();
         boolean flag=dao.isLogin(person);
-        if(flag){
+        if(flag) {
             return SUCCESS;
-        }else{
-            return INPUT;
+        } else {
+        	return INPUT;
         }
 
+    }
+    public String register() {
+    	Dao dao = new Dao();
+    	dao.Register(person);
+		return SUCCESS;
     }
     public Person getPerson() {
         return person;

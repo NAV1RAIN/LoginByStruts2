@@ -1,8 +1,19 @@
 package com.claude.bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
+//import javax.servlet.http.*;
+//import org.apache.struts2.interceptor.servlet.*;
+
 public class Person {
     private String username;
     private String password;
+    public Person() {}
+    public Person(String username, String password) {
+    	this.username = username;
+    	this.password = password;
+    }
     public String getUsername() {
         return username;
     }
@@ -15,5 +26,5 @@ public class Person {
     public void setPassword(String password) {
         this.password = password;
     }
-
+    
 }

@@ -1,5 +1,7 @@
 @charset "UTF-8";
-input{
+.input1{
+	width: 140px;
+	height: 25px;
 	position: relative;
 	border: 1px solid #ccc; 
 	padding: 7px 0px;
